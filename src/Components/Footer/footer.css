@@ -1,0 +1,123 @@
+footer{
+    background-color: #3b3b3b;
+    padding: 70px 0 10px;
+    color: white;
+    display: block;
+}
+.container{
+    width: 100%;
+    padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+/* .row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+} */
+.col-lg-4 p{
+    font-family: 'Rubik', sans-serif;
+}
+.col-lg-4 .list{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 14px;
+}
+.col-lg-4 h1{
+    font-family: 'Lobster', cursive;
+    margin-bottom: 8px;
+    font-size: 61px;
+}
+.col-lg-4 h4{
+    margin-bottom: 1.5rem;
+}
+.list a{
+    text-decoration: none;
+    color: white;
+}
+.list ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+footer .list ul li a::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f054";
+    padding-right: 6px;
+}
+footer ul.location li {
+    list-style-type: none;
+    font-size: 16px;
+    color: #fff;
+    max-width: 300px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    transition: all ease 0.5s;
+}
+footer ul.location li a {
+    color: #fff;
+    transition: all ease 0.5s;
+    text-decoration: none;
+}
+footer ul.location li i {
+    color: #ff5308;
+    margin-right: 10px;
+    transition: all ease 0.5s;
+}
+footer ul.social-icon {
+    display: flex;
+}
+footer ul.social-icon li {
+    background-color: #fff;
+    color: #ff5308;
+    list-style-type: none;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+footer ul.social-icon li:hover,
+footer ul.social-icon li i:hover{
+    background-color:#ff5308 ;
+    color: #fff;
+}
+footer ul.social-icon li i {
+    color: #ff5308;
+    margin-bottom: 0 !important;
+    transition: all ease 0.5s;
+}
+.fa-brands, .fab {
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display,inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+.fa-facebook-f:before {
+    content: "\f39e";
+}
+footer .f-btn{
+    border-top: 1px solid #717171;
+    margin-top: 30px;
+    padding-top: 20px;
+    counter-reset: #fff;
+}
+footer h6{
+    font-family: 'Rubik', sans-serif;
+}

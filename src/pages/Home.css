@@ -1,0 +1,675 @@
+/*=====================GOOGLE FONTS===================*/
+@import url('https://fonts.googleapis.com/css2?family=Amita&family=Bellota+Text&family=Dancing+Script:wght@400;600&family=Lobster&family=Raleway:wght@200&family=Rubik:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap');
+
+/* ======================VARIABLES CSS======================= */
+:root{
+    /*==================== COLORS =================== */
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: hsl(38, 92%, 58%);
+    --first-color-light: hsl(38, 100%, 78%);
+    --first-color-alt: hsl(32, 75%, 50%);
+    --second-color: hsl(195, 75%, 52%);
+    --dark-color: hsl(212, 40%, 12%);
+    --white-color:hsl(212, 4%, 95%);
+    --body-color: hsl(212, 42%, 15%);
+    --container-color:hsl(212, 42%, 20%);
+/* ===========================FONT AND TYPOGRAPHY =========================*/
+    /* .5rem = 8px | 1rem = 16px ..... */
+    --body-font: 'Bai Jamjuree', sans-serif;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Raleway', sans-serif; */
+}
+body{
+    /* font-family:  var(--body-font); */
+    font-size: var(--normal-font-size);
+    /* background-color: var(); */
+    color: var(--dark-color);
+}
+/* ---------------------------------marquee--------------------------- */
+.css2{
+    font-size:22px;
+    overflow: hidden;
+    font-family: georgia;
+    /* font-style:italic; */
+    /* font-weight:bold; */
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 8px rgba(255, 68, 0, 0.63);
+    height: 1.5rem;
+    top: 15px;
+    position: relative;
+    background: linear-gradient(to bottom, rgb(250, 101, 47), #FFF3F1, rgb(254, 115, 64));
+  }
+  .css2 ul{
+    display: flex;
+    gap: 95px;
+    margin: -1px;
+  }
+/* ---------------------------------------------------homecover img---------------------------------------- */
+
+.banner-1{
+    display: grid;
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(151, 148, 148, 0.5)), url(https://lovelace-media.imgix.net/getty/164759083.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 33rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+  
+  .badge {
+    display: block;
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    cursor: pointer;
+    background: url(https://source.unsplash.com/random/1000x1000) no-repeat 100% 50%;
+    background-size: 120%;
+    border-radius: 50% !important;
+    transition:  all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.75);
+  }
+  
+  .badge:hover {
+    box-shadow: 0px 0.5rem 2rem rgba(0, 0, 0, 0.75);
+    background-position: 0% 50%;
+  }
+  
+  .badge:hover .text {
+    transform: rotate(-45deg) translate(0px) rotate(-315deg);
+    background: rgba(102, 51, 153, 0.635);
+    width: 20rem;
+    letter-spacing: 1rem;
+    line-height: 20rem;
+    height: 20rem;
+    margin-top: -10rem;
+    margin-left: -10rem;
+    transition:  all 0.5s cubic-bezier(0.55, 0, 0.1, 1), letter-spacing 1.5s ease-out;
+  }
+  
+  .text {
+    display: block;
+    position: absolute;
+    width: 10rem;
+    height: 10rem;
+    line-height: 10rem;
+    left: 50%;
+    top: 50%;
+    margin-top: -5rem;
+    margin-left: 5rem;;
+    font-size: 2rem;
+    font-family: Raleway, sans-serif;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    background:rebeccapurple;
+    transform: rotate(-180deg) translate(calc(-10rem) rotate(180deg));
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  }
+
+.banner-1 p{
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    /* bottom: 7rem; */
+    font-weight: 600;
+ }
+ .brand-logo{
+    display: none;
+ }
+ /* =======================================BREAKPOINTS============================== */
+ /* ------mediam device */
+@media screen and (max-width: 992px) {
+    .badge{
+      display: none !important;
+  
+    }
+
+    .banner-1 p{
+        position: relative;
+        text-align: center;
+        top: -163px;
+        margin: 0 15px;
+    }
+    .brand-logo{
+        display: block;
+    }
+  }
+/* ------------------------------------SEC-0-Category section------------------------ */
+.sec-0{
+    display: grid;
+    text-align: center;
+}
+.sec-0 h1{
+    margin-top: 14px;
+    font-family: 'Dancing Script', cursive;
+}
+.catogary{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 7rem;
+    
+}
+@media(max-width:874px){
+    .sec-0{
+        display: none;
+    } 
+}
+.catogary-card{
+    cursor: pointer;
+}
+.catogary .catogary-card img{
+    height: 22rem;
+}
+
+.catogary-card  a{
+    text-decoration: none !important;
+    color: black !important;
+}
+/* --------------------------------banner section------------------------- */
+
+.banner{
+    margin-bottom: 15px;
+    margin-top: 74px;
+}
+
+.ban-er img{
+  height: auto;
+  object-fit: contain;
+ 
+}
+
+/* -----------------------------------------2ND SECTION---------------------------- */
+.sec-2 .sm-banner{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25rem;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+.sec-2 .sm-banner .ad-ban-text{
+    display: grid;
+    justify-content: center;
+}
+.sec-2 .sm-banner .ad-ban-text p{
+    font-weight: 600;
+    color: black;
+    position: absolute;
+    top: 175rem;
+    font-size: 28px;
+    width: 43rem;
+    margin: 126px;
+    right: -71px;
+}
+.sec-2 .sm-banner .ad-ban-text a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    position: relative;
+    top: -6rem;
+    left: 265px;
+    font-weight: 600;
+}
+.sec-2 .sm-banner .ad-ban-text a:hover{
+    background-color: #717171;
+    color: wheat;
+    border: none;
+}
+/* =============================== BREAK POINTS ========================== */
+/* for small device */
+@media (max-width:600px) {
+    .sec-2{
+        display: none;
+    }
+}
+/* ===================================== SEC 3 =================================== */
+a{
+    text-decoration: none !important;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/* =============================== CARD =========================== */
+.container{
+   
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh;  */
+}
+.card_container{
+    padding-block: 5rem;
+}
+.card_content{
+    margin-inline: 1.75rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+.card_article{
+    width: 300px;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+.card_image{
+    position: relative;
+    background-color: var(--first-color-light);
+    padding-top: 1.5rem;
+    margin-bottom: -.75rem;
+}
+
+.card_data{
+    background-color: var(--container-color);
+    font-family: var(--body-font);
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.card_img{
+    width: 180px;
+    margin: 0 auto;
+    position: relative;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+    z-index: 5;
+}
+
+.card_shadow{
+    width: 200px;
+    height: 200px;
+    background-color: var(--first-color-alt);
+    border-radius: 50%;
+    position: absolute;
+    top: 3.75rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    filter: blur(45px);
+}
+
+.card_name{
+    font-size: var(--h2-font-size) !important;
+    color: var(--second-color) !important;
+    margin-bottom:.75rem !important ;
+}
+.card_description{
+    font-weight: 500;
+    margin-bottom: 1.75rem;
+    color: var(--white-color);
+}
+
+.card_button{
+    display: inline-block;
+    background-color: var(--first-color);
+    padding: .75rem 1.5rem;
+    border-radius: .25rem;
+    color: var(--dark-color);
+    font-weight: 600;
+}
+/* ==============================Swiper class=========================== */
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content: "";
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    width: initial;
+    height: initial;
+    font-size: 3rem;
+    color: var(--second-color);
+    display: none;
+}
+
+.swiper-button-prev{
+    left: 0;
+}
+
+.swiper-button-next{
+    right: 0;
+}
+
+.swiper-pagination-bullet{
+    background-color: hsl(212, 32%, 40%);
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--second-color);
+}
+
+.card-img{
+    object-fit: contain;
+}
+/*---------------------------------BREAKPOINTS--------------------- */
+/* For small divices */
+@media screen and (max-width: 320px) {
+    .card_data{
+        padding: 1rem;
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 768px) {
+    .card_content{
+        margin-inline: 3rem;
+    } 
+    
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: block;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 1120px) {
+    .container{
+        max-width: 1344px !important;
+    }
+    .card_container{
+        max-width: 1326px !important;
+    }
+
+    .swiper-button-next{
+        right: -1rem;
+    }
+    .swiper-button-prev{
+        left: -1rem;
+    }
+}
+/* ==================================SEC-4============================ */
+.choose{
+    position: relative;
+    margin-top: 7rem;
+    margin-bottom: 43px;
+}
+.choose img{
+    width: 100%;
+    height: auto;
+
+}
+.choose .why-choose{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.choose .why-choose h2{
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+}
+.choose .why-choose .choose-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width: 991.98px) {
+    .choose .why-choose .choose-wrap{
+        flex-wrap: wrap;
+        gap:10px 0;
+    }   
+}
+.fadeInDown{
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown
+}
+
+.choose .why-choose .choose-wrap .chs{
+    background-color: #fff;
+    padding: 24px 0 12px;
+    width: 120px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+    border-radius: 12px;
+    flex-direction: column;
+    box-shadow: 1px -2px 13px -1px rgb(99 99 99 / 69%);
+}
+.choose .why-choose .choose-wrap .chs img {
+    width: unset;
+    transition: all ease 0.5s;
+}
+.choose .why-choose .choose-wrap .chs h6 {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 0 !important;
+    font-weight: 400
+}
+
+/* ================================why choose us (marquee) section======================= */
+.css2{
+    font-size:22px;
+    font-family: georgia;
+    /* font-style:italic; */
+    /* font-weight:bold; */
+    color:rgb(255, 255, 255);
+    text-shadow: 2px 2px 8px rgba(255, 68, 0, 0.63);
+    height: 2rem;
+    top: 15px;
+    position: relative;
+    background: linear-gradient(to bottom, orangered, #FFF3F1, orangered);
+  }
+  .css2 ul{
+    display: flex;
+    gap: 95px;
+    margin: -1px;
+  }
+.choose_two{
+    display: none;
+}
+.css1{
+    background-color:orangered;
+    font-size:32px;
+    font-family: georgia;
+    /* font-style:italic; */
+    /* font-weight:bold; */
+    color:white;
+    text-shadow: 2px 2px 8px #f3d6d6;
+  }
+  .css1 ul{
+    display: flex;
+    gap: 95px;
+    margin: 4px 0;
+  }
+
+  /* ---------------------------------BREAK POINTS----------------------------- */
+/* for small device */
+@media (max-width:900px){
+    .choose{
+        display: none;
+    }
+    .choose_two{
+        display: block;
+    }
+}
+/* ========================allproduct page================== */
+.card-img-top{
+    border-radius: 50px !important;
+    padding: 20px;
+}
+.all-card{
+    border-radius: 30px !important;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.card-body{
+    padding: 25px;
+    margin-top: -24px;
+}
+.pr-btn{
+    background: orangered  !important;
+    color: white !important;
+    display: flex !important;
+    align-items: center !important;
+    border-radius: 50px !important;
+    width: 174px;
+    gap: 7px;
+}
+.pr-btn:hover{
+    background: black !important;
+}
+
+
+/* ===========================Login page====================== */
+.lo-contaner{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 95px auto;
+}
+.lo-contaner h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lavender;
+    width: 38rem;
+    height: 4rem;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+.lo-form{
+    border: 1px solid gray;
+    padding: 32px;
+    margin: 31px 0;
+    border-radius: 8px;
+}
+/*=======================================BREAKS POINTS==================================*/
+/* for small device */
+@media screen and (max-width:390px) {
+    .lo-contaner h1{
+        width: 22rem;
+    }
+}
+
+/* ===========================Register page====================== */
+.re-contaner{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 95px auto;
+}
+.re-contaner h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lavender;
+    width: 38rem;
+    height: 4rem;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+.re-form{
+    border: 1px solid gray;
+    padding: 32px;
+    margin: 31px 0;
+    border-radius: 8px;
+}
+/*=======================================BREAKS POINTS==================================*/
+/* for small device */
+@media screen and (max-width:390px) {
+    .Re-contaner h1{
+        width: 22rem;
+    }
+}
+
+/* =====================================Contact Page======================== */
+.capsule_container{
+    background-color: rgb(70, 67, 67);
+    width: 100%;
+    height: 100vh;
+}
+.capsule_container h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+    background-color: lightblue;
+}
+.contact-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6rem;
+}
+.contact-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info img{
+    height: 25rem;
+    width: 25rem;
+    border-top-right-radius: 13rem;
+    border-top-left-radius: 13rem;
+    cursor: pointer;
+}
+.overlay{
+    position: absolute;
+    transition: all .3s ease;
+    opacity: 0;
+    background-color: #eee;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info:hover .overlay{
+    opacity: 1;
+}
+.overlayeffect{
+    width: 25rem;
+    height: 400px;
+    border-top-left-radius: 20rem;
+    border-top-right-radius: 20rem;
+    background-color: #f9f9f986;
+
+}
+.overlayeffect p{
+    font-weight: 600;
+    font-size: 20px;
+
+}
+.overlayeffect p i{
+    margin-bottom: 23px;
+}
+.contact-us{
+    width: 36rem;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.372), rgba(255, 255, 255, 0.561)), url(https://images.alphacoders.com/132/thumb-350-1328702.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+
+}
+.contact-us form{
+    margin: 27px;
+}
+ /* =======================================BREAKPOINTS============================== */
+    /* for small screen and large screen */
+    @media (min-width:280px) and (max-width: 1024px) {
+    .contact-info{
+       display: none;
+    }
+}
+
+

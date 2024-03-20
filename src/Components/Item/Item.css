@@ -1,0 +1,17 @@
+.card{
+    margin: 2rem;
+    width: 313px;
+}
+.price{
+    display: flex;
+    gap: 12px;
+}
+.new_price{
+    font-weight: 600;
+}
+.old_price{
+    font-weight: 400;
+    color: #FF7F7F;
+    font-size: 18px;
+    text-decoration: line-through;
+}
